@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Content</title>
+    <style > </style>
+</head>
+<body>
+    <h1 style="font-size: 50px; color: #2C3E50; font-family: 'Helvetica Neue', sans-serif; font-weight: bold; text-align: center; text-transform: capitalize; border-bottom: 3px solid #3498db; padding-bottom: 10px; margin-bottom: 20px;">Welcome to My Webpage Aldo </h1>
+    <p style="font-size: 32px; color: #E74C3C; font-family: 'Arial', sans-serif; text-align: center; font-weight: lighter; letter-spacing: 1px; margin: 20px 0; text-transform: uppercase; background-color: #FDEDEC; padding: 15px; border-radius: 8px;">This is my first HTML webpage, and I'm learning how to code!</p>
+
+<!-- 
+PROJECT REQUIREMENTS:
+User Interface (UI):
+Build a complete HTML page using valid HTML5 syntax.
+Use semantic elements such as <nav>, <form>, and <table> where appropriate.
+Content Structure:
+Include all required components: a form, table, navigation bar, and at least one image.
+Code Quality:
+Properly indent and organize your HTML code for readability.
+Add comments to explain key sections where necessary.
+Styling:
+Use inline styles or the <style> section to apply simple visual enhancements, such as rounded borders.
+Browser Compatibility:
+Ensure the page is responsive by using the viewport meta tag.
+Test the page in different browsers to confirm proper rendering.
+
+📤 SUBMISSION GUIDELINES:
+File Submission:
+Save your completed .html file, ensuring it is correctly named and follows HTML5 standards.
+If your assignment includes additional assets (e.g., images, CSS files), include them in a properly structured folder.
+Create a README.txt file that briefly describes the assignment and the key components you implemented.
+Bonus Consideration:
+Clearly label any bonus components in your code with comments to make them easy to identify.
+Submission:
+Upload your .html file(s) (along with any additional assets) directly to Google Classroom as a .zip file or individual files as needed.
+-->
+
+
+
+<hr>
+
+
+
+<!-- Part 1: Form Creation
+Create a Basic Contact Form with the following fields:
+Name (text input)
+Email (email input)
+Message (textarea)
+Submit button 
+
+Bonus: Add a radio button group asking how the user found the site (e.g., Google, Social Media).-->
+
+<form style="width: 300px; margin: 0 auto; padding: 20px; border: 1px solid #ccc; border-radius: 8px; background-color: #f9f9f9;" id="form1" class="html" action="submit.php" method="post">
+
+    <section id="name" class="html" >
+        <label  for="name" style="display: block; margin-bottom: 8px; color: #333;">Name:</label>
+        <input style="width: 95%; padding: 8px; margin-bottom: 12px; border: 1px solid #ccc; border-radius: 4px;" type="text" name="name"  id="name" placeholder="My Name">
+    </section>
+
+<br>
+
+    <section id="email" class="html">
+        <label style="display: block; margin-bottom: 8px; color: #333;" for="email">Email:</label>
+        <input style="width: 95%; padding: 8px; margin-bottom: 12px; border: 1px solid #ccc; border-radius: 4px;" type="email" name="email" id="email" placeholder="me@me.com">
+    </section>
+    
+<br>
+        
+    <section id="pass" class="html">
+        <label style="display: block; margin-bottom: 8px; color: #333;" for="pass">password</label>
+        <input style="width: 95%; padding: 8px; margin-bottom: 12px; border: 1px solid #ccc; border-radius: 4px;" type="password" name="pass" id="pass" maxlength="12" placeholder="********">
+    </section>
+
+<br>
+
+
+    <section id="message" class="html">
+        <label style="display: block; margin-bottom: 8px; color: #333;" for="message">Message:</label>
+        <textarea style="width: 95%; padding: 8px; margin-bottom: 12px; border: 1px solid #ccc; border-radius: 4px;" name="message" id="message" placeholder="Message"></textarea>
+    </section>
+
+<br>
+    
+    <section id="submit" class="html">
+        <button style="width: 100%; padding: 10px; background-color: #4CAF50; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 16px;" type="submit">Submit</button>
+    </section>        
+
+<br>
+    
+    <section>
+        <label for="found">How did you find this site?</label> <br><br>
+        <input type="radio" id="friend" name="found" value="Friend">Friend <br>
+        <input type="radio" name="found" id="found" value="Google">Google <br>
+        <input type="radio" name="found" id="found" value="Social Media">Social Media
+    </section>
+</form>
+
+
+<hr>
+<!-- Part 2: Table Structure
+Create a Table that displays some sample product data:
+Columns: Product Name, Price, and Quantity.
+Rows: At least 3 products with their respective details.
+Bonus: Add a header row to label the columns. -->
+
+
+<table  style="width: 80%; margin: 20px auto; border-collapse: collapse; font-family: Arial, sans-serif;">
+    
+    <!-- Bonus  -->
+    <thead>
+    <tr style="background-color: #333; color: white; text-align: left;">
+        <th style="padding: 12px; border: 1px solid #ddd;">Product Name</th>
+        <th style="padding: 12px; border: 1px solid #ddd;">Price</th>
+        <th style="padding: 12px; border: 1px solid #ddd;">Quantity</th>
+    </tr>
+    </thead>
+
+<tbody>
+    <tr style="background-color: #f9f9f9;">
+        <td style="padding: 12px; border: 1px solid #ddd;">Product 1</td>
+        <td style="padding: 12px; border: 1px solid #ddd;">$10</td>
+        <td style="padding: 12px; border: 1px solid #ddd;">5</td>
+    </tr>
+    <tr style="background-color: #fff;">
+        <td style="padding: 12px; border: 1px solid #ddd;">Product 2</td>
+        <td style="padding: 12px; border: 1px solid #ddd;">$20</td>
+        <td style="padding: 12px; border: 1px solid #ddd;">10</td>
+    </tr>
+    <tr style="background-color: #f9f9f9;">
+        <td style="padding: 12px; border: 1px solid #ddd;">Product 3</td>
+        <td style="padding: 12px; border: 1px solid #ddd;">$30</td>
+        <td style="padding: 12px; border: 1px solid #ddd;">15</td>
+    </tr>
+    </tbody>
+</table>
+
+<hr>
+<!-- Part 3: Navigation Bar
+Create a Simple Navigation Bar with the following links:
+Home
+About
+Contact
+Use an unordered list (<ul>) to organize the links. -->
+
+<nav style="background-color: #333; padding: 10px 0; text-align: center;">
+    <ul style="list-style-type: none; margin: 0; padding: 0; display: flex; justify-content: center; gap: 20px;">
+        <li style="display: inline;"><a href="index.html" style="text-decoration: none; color: white; font-size: 18px; padding: 10px 20px; display: inline-block; transition: background-color 0.3s;">Home</a></li>
+        <li style="display: inline;"><a href="about.html" style="text-decoration: none; color: white; font-size: 18px; padding: 10px 20px; display: inline-block; transition: background-color 0.3s;">About</a></li>
+        <li style="display: inline;"><a href="contact.html" style="text-decoration: none; color: white; font-size: 18px; padding: 10px 20px; display: inline-block; transition: background-color 0.3s;">Contact</a></li>
+    </ul>
+</nav>    
+
+    <!-- Part 4: Adding Images
+Add a Placeholder Image (use https://placehold.co/300x200).
+Bonus: Add a second image with a rounded border using the style attribute -->
+    
+        <img src="https://placehold.co/300x200" alt="Placeholder image"  style="display: block; margin: 20px auto; border-radius: 8px; border: 2px solid #ccc;">
+        <!-- Bonus  -->
+        <img src="https://placehold.co/300x200" alt="Placeholder image rounded border"  style="display: block; margin: 20px auto; border: 2px solid #ccc; border-radius: 50%;">
+    
+        <footer>
+            <p>&copy; 2025 <a href="http://aldowebsite.com">Aldo Website</a>. All rights reserved.</p>
+        </footer>
+</body>
+</html>
